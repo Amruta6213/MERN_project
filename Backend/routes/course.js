@@ -23,6 +23,35 @@ router.post("/add/:cid",authAdmin,(req,res)=>{
         res.send(result.createResult(error,data))
     }) 
 })
+router.put('/update/:courseId',(req, res) => {
+  const { courseId } = req.params
+  const { courseName, description, fees, startDate, endDate, videoExpireDays } = req.body
+
+  const sql = `
+    UPDATE courses
+    SET course_name=?, description=?, fees=?, start_date=?, end_date=?, video_expire_days=?
+    WHERE course_id=?
+  `
+
+  pool.query(
+    sql,
+    [courseName, description, fees, startDate, endDate, videoExpireDays, courseId],
+    (error, data) => {
+      res.send(result.createResult(error, data))
+    }
+  )
+})
+
+router.delete('/delete/:courseId',
+  (req, res) => {
+  const { courseId } = req.params
+
+  const sql = 'DELETE FROM courses WHERE course_id=?'
+
+  pool.query(sql, [courseId], (error, data) => {
+    res.send(result.createResult(error, data))
+  })
+})
 
 
 module.exports = router
