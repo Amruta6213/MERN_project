@@ -7,7 +7,7 @@ const router = express.Router()
 
 
 router.post('/add', (req, res) => {
-  const { courseId, title, youtubeUrl, description } = req.body
+  const { course_Id, title, youtube_url, description } = req.body
 
   const sql = `
     INSERT INTO videos (course_id, title, youtube_url, description)
@@ -16,7 +16,7 @@ router.post('/add', (req, res) => {
 
   pool.query(
     sql,
-    [courseId, title, youtubeUrl, description],
+    [course_Id, title, youtube_url, description],
     (error, data) => {
       res.send(result.createResult(error, data))
     }
