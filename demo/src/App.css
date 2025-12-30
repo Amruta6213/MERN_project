@@ -1,0 +1,153 @@
+.layout
+{
+    height:500px;
+    width: 600px;
+    padding: 30px;
+    margin-left:center;
+    margin-right:center;
+    box-shadow: 0 10px 25px black;
+    margin: 50px auto;
+}
+.layout h1
+{
+    text-align: center;
+    color: black;
+}
+.layout label
+{
+    font-size: 25px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    display: block;
+}
+.layout input
+{
+    height: 30px;
+    width: 400px;
+    margin-left: 0; 
+    border-color: black;
+}
+.layout button
+{
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    background-color:blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.course
+{
+    height:800px;
+    width: 600px;
+    padding: 30px;
+    margin-left:center;
+    margin-right:center;
+    box-shadow: 0 10px 25px black;
+    margin: 50px auto;
+}
+.course h1
+{
+    text-align: center;
+    color: black;
+}
+.course label
+{
+    font-size: 25px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    display: block;
+}
+.course input
+{
+    height: 30px;
+    width: 400px;
+    margin-left: 0; 
+    border-color: black;
+}
+.course button
+{
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    background-color:blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.course1
+{
+    height:800px;
+    width: 600px;
+    padding: 30px;
+    margin-left:center;
+    margin-right:center;
+    box-shadow: 0 10px 25px black;
+    margin: 50px auto;
+}
+.course1 h1
+{
+    text-align: center;
+    color: black;
+}
+.course1 label
+{
+    font-size: 25px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    display: block;
+}
+.course1 input
+{
+    height: 30px;
+    width: 400px;
+    margin-left: 0; 
+    border-color: black;
+}
+.course1 button
+{
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    background-color:blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.course-table {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.course-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+.course-table th, 
+.course-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.course-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+
